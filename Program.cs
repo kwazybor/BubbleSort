@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Bubble_sort
 {
@@ -12,6 +12,7 @@ namespace Bubble_sort
             Console.WriteLine("Podaj liczby po enterze");
             for (int i = 0; i < liczby.Length; i++)
             {
+                Console.Write("{0}. ",i+1);
                 liczby[i] = int.Parse(Console.ReadLine());
             }
             int najLiczba = 0;
@@ -30,8 +31,8 @@ namespace Bubble_sort
                         {
                             najLiczba = liczby[i];
                         }
-                        Console.WriteLine("Największa liczba to: {0}", najLiczba);
                     }
+                    Console.WriteLine("Największa liczba to: {0}", najLiczba);
                     break;
                 case 2:
                     najLiczba = 99999999;
@@ -41,8 +42,8 @@ namespace Bubble_sort
                         {
                             najLiczba = liczby[i];
                         }
-                        Console.WriteLine("Najmniejsza liczba to: {0}", najLiczba);
                     }
+                    Console.WriteLine("Najmniejsza liczba to: {0}", najLiczba);
                     break;
                 default:
                     Console.WriteLine("Błędna opcja");
